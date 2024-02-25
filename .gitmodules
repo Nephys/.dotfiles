@@ -1,0 +1,9 @@
+[submodule ".config/nvim"]
+    path = .config/nvim
+    url = https://github.com/Nephys/nvim.git
+[submodule ".config/tmux"]
+    path = .config/tmux
+    url = https://github.com/Nephys/tmux.conf.git
+[submodule ".config/zsh"]
+	path = .config/zsh
+	url = https://github.com/Nephys/zsh.git

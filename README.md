@@ -7,3 +7,5 @@ cd ~/.dotfiles
 chmod +x install.sh
 ./install.sh
 ```
+# Updating
+Once installed you should be able to simply type `update-dots` in order to update the entire config

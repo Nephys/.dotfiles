@@ -12,7 +12,7 @@ final_space = true
     type = 'path'
     style = 'plain'
     foreground = 'p:pink'
-    template = '{{ .Path }}'
+    template = ' {{ .Path }}'
 
     [blocks.segments.properties]
       style = 'full'
@@ -21,7 +21,7 @@ final_space = true
     type = 'git'
     style = 'plain'
     foreground = 'p:lavender'
-    template = '{{ .HEAD }} '
+    template = '<b>{{ .HEAD }}</b>'
 
     [blocks.segments.properties]
       branch_icon = '  '
@@ -45,7 +45,13 @@ final_space = true
     type = 'session'
     style = 'plain'
     foreground = 'p:blue'
-    template = '<b>{{ .UserName }}</b>@{{ .HostName }} '
+    template = ' <b>{{ .UserName }}@</b>'
+
+  [[blocks.segments]]
+    type = 'session'
+    style = 'plain'
+    foreground = 'p:text'
+    template = '<b>{{ .HostName }}</b> '
 
   [[blocks.segments]]
     type = 'text'
@@ -55,7 +61,7 @@ final_space = true
       '{{if eq .Code 0}}p:green{{end}}',
       '{{if gt .Code 0}}p:red{{end}}',
     ]
-    template = ' '
+    template = ''
 
 [[blocks]]
   type = 'rprompt'
@@ -66,7 +72,7 @@ final_space = true
     style = 'plain'
     background = 'transparent'
     foreground = 'p:peach'
-    template = '{{ div .Ms 1000 }}s'
+    template = '{{ div .Ms 1000 }}s '
 
     [blocks.segments.properties]
       threshold = 5000
@@ -80,7 +86,7 @@ final_space = true
 [secondary_prompt]
   background = 'transparent'
   foreground = 'p:blue'
-  template = ' '
+  template = ''
 
 [palette]
   lavender = '#B4BEFE'
@@ -89,3 +95,4 @@ final_space = true
   green = '#A6E3A1'
   blue = '#89B4FA'
   peach = '#FAB387'
+  text = '#CDD6F4'

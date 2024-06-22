@@ -5,6 +5,7 @@ Make sure the following binaries are installed on your system first:
  - [zoxide](https://github.com/ajeetdsouza/zoxide) -> better cd
  - [tfetch](https://github.com/Nephys/tfetch) -> fetch splash screen
  - [neovim](https://github.com/neovim/neovim) -> text editor / ide
+ - [fzf](https://github.com/junegunn/fzf) -> command-line fuzzy finder
 
 # Step uno
 ## God's only step
